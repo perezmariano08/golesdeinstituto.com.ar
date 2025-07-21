@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    background-color: var(--red);
+    height: 40px;
+}
+
+.navLinks {
+    display: flex;
+}
+
