@@ -11,9 +11,7 @@ export async function getPartidoById(id) {
     return res.json();
 }
 
-export async function getPartidosAñoMes(año, mes) {
-    console.log(año, mes);
-    
+export async function getPartidosAñoMes(año, mes) {    
     const res = await fetch(`${URL_API}partidos/por-fecha?temporada=${año}&mes=${mes}`, { cache: 'no-store' });
     if (!res.ok) throw new Error('Error al obtener los partidos por año y mes');
     return res.json();

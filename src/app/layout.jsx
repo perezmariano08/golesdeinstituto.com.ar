@@ -8,8 +8,9 @@ export const metadata = {
 }
 
 const albertSans = Albert_Sans({
-    weight: ['300', '400', '500'],
-    styles: ['italic']
+    weight: ['400'],
+    subsets: ['latin'],
+    preload: true,
 })
 
 export default function RootLayout({ children }) {
