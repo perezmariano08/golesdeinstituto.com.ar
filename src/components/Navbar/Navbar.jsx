@@ -24,7 +24,8 @@ export default function Navbar() {
                     <ul className={styles.navbarlist_top}>
                         <li>
                             <Link href={'/'} className={styles.active}>
-                                <p>golesde<span>instituto</span>.com.ar</p>
+                                <img src="/favicon.png"/>
+                                <p>golesde<span>instituto</span></p>
                             </Link>
                         </li>
                         <li>
