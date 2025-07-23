@@ -1,13 +1,11 @@
+@import "primereact/resources/themes/lara-light-blue/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
 :root {
     --green: #00985f;
     --green-opacity: rgba(42, 209, 116, 0.2);;
     /* Gray Scale */
-    --white: #ffffff;
-    --gray-200: #65656B;
-    --gray-300: #2D2F30;
-    --gray-400: #1A1B1B;
-    --gray-500: #101011;
-    --black: #141414;
     --yellow: #E2B000;
 
         /* White */

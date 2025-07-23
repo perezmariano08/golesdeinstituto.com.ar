@@ -1,0 +1,19 @@
+.partidos_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partidos_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    gap: 20px;
+}

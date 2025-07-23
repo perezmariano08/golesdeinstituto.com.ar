@@ -1,14 +1,21 @@
+import './globals.css'
+import 'primereact/resources/themes/lara-light-indigo/theme.css'; // Tema
+import 'primereact/resources/primereact.min.css'; // Core
+import 'primeicons/primeicons.css'; // Iconos
+
 import { Albert_Sans } from 'next/font/google'
 import Navbar from '../components/Navbar/Navbar'
-import './globals.css'
+
+// PrimeReact core + theme + icons
+
 
 export const metadata = {
-    title: 'Next.js',
+    title: 'Goles de Instituto',
     description: 'Descripcion'
 }
 
 const albertSans = Albert_Sans({
-    weight: ['400'],
+    weight: ['100','200', '300','400', '500', '600', '700', '800', '900'],
     subsets: ['latin'],
     preload: true,
 })
@@ -16,6 +23,9 @@ const albertSans = Albert_Sans({
 export default function RootLayout({ children }) {
     return (
         <html lang="es">
+            <head>
+                <link rel="icon" href="/favicon.png" type="image/png" />
+            </head>
             <body className={albertSans.className}>
                 <Navbar />
                 {children}

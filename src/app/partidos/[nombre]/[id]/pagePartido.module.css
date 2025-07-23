@@ -1,0 +1,233 @@
+.partido_container {
+    display: flex;
+    justify-content: center;
+}
+
+.partido_wrapper {
+    max-width: 1230px;
+    display: flex;
+    width: 100%;
+    padding: 20px 15px;
+
+    @media (max-width: 968px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.wrapper_left {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 67%;
+    @media (max-width: 968px) {
+        width: 100%;
+    }
+}
+
+.detalles_wrapper {
+    background-color: var(--white-0);
+    border: 1px solid var(--white-100);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-radius: var(--radius);
+
+    &.suspendido {
+        background-color: var(--black-950);
+        color: var(--black-50);
+    }
+
+    @media (max-width: 968px) {
+        width: 100%;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    border-bottom: var(--border);
+
+    & p {
+        font-size: 12px;
+        color: var(--black-0);
+    }
+}
+
+.metadata {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: var(--padding);
+    border-bottom: var(--border);
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        & p, svg {
+            font-size: 12px;
+            color: var(--black-0);
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.detalles_equipos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    
+    @media (max-width: 768px) {
+        padding: 25px 10px;
+        justify-content: space-between;
+    }
+}
+
+.detalles_equipo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: end;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--black-900);
+        img {
+            width: 35px;
+            @media (max-width: 768px) {
+                width: 40px;
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            @media (max-width: 768px) {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+
+        &:hover {
+            text-decoration: underline;
+            img {
+                opacity: 0.6;
+            }
+        }
+
+        @media (max-width: 768px) {
+            gap: 10px;
+        }
+    }
+
+    &.visitante {
+        justify-content: flex-start;
+        text-align: start;
+        a {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        align-items: center;
+        a {
+            flex-direction: column-reverse;
+        }
+        
+        &.visitante {
+            justify-content: center;
+            align-items: center;
+            a {
+                flex-direction: column-reverse;
+            }
+        }  
+    }
+
+    @media (max-width: 768px) {
+        gap: 12px;
+    }
+}
+
+.detalles_resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    min-width: fit-content;
+    strong {
+        font-size: 26px;
+        font-weight: 700;
+        &.penales {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--black-0);
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        font-size: 12px;
+        color: var(--black-0);
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
+}
+
+.detalles_goles {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.detalles_goles_equipo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    text-align: end;
+    gap: 2px;
+
+    p {
+        font-size: 12px;
+        color: var(--black-0);
+    }
+
+    &.visitante {
+        align-items: flex-start;
+        text-align: start;
+    }
+}
+
+.detalles_goles_icono {
+    display: flex;
+    min-width: 80px;
+    justify-content: center;
+
+    svg {
+        font-size: 12px;
+        color: var(--black-0);
+    }
+
+    @media (max-width: 768px) {
+        min-width: 20px;
+    }
+}
